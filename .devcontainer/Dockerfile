@@ -56,7 +56,8 @@ RUN apt-get update \
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
 
+RUN git clone https://github.com/laur-b/app2.git && cd app2
 RUN ls && pwd
 #WORKDIR /workspaces/1.dev
 #COPY ../ .
-#RUN yarn -i && yarn start
+RUN yarn -i && yarn start
