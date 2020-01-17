@@ -56,6 +56,7 @@ RUN apt-get update \
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
 
-WORKDIR /workspaces/1.dev
-COPY ../ .
-RUN yarn -i && yarn start
+RUN ls && pwd
+#WORKDIR /workspaces/1.dev
+#COPY ../ .
+#RUN yarn -i && yarn start
